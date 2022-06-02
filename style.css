@@ -1,0 +1,116 @@
+.todo-content{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 0;
+    margin:0;
+}
+  
+.todo-input{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom:20px;
+    justify-content: center;
+}
+.header-todo{
+    margin: 1%;
+}
+textarea{
+    height: 10vh;
+    width: 92.4%;
+}
+.todo-input input,textarea{
+  width: 80%;
+  padding: 5px 5px;
+  height: 31px;
+  border: 1px solid #c5c5c5;
+  font-size: 18px;
+}
+textarea{
+    height: 10vh;
+    width: 92.4%;
+}
+.todo-input input:focus{
+    outline:unset;
+}
+#add-text{
+    margin-bottom: 5px;
+}
+.todo-input button{
+    width: 12%;
+    padding: 10px 30px;
+    background: #33d9b2;
+    color: white;
+    border: 1px solid #33d9b2;
+    cursor: pointer;
+    transition:0.5s;
+    font-size: 18px;
+    text-align: center;
+}
+.todo-input button:hover{
+    background:#218c74;
+}
+.todo-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom:20px;
+    text-align: center;
+}
+.todo-list .task-class{
+    width: 100%;
+}
+.error,#Delete{
+    background-color:#ff5252;
+    color:white;
+    border: #ff5252;
+    border-radius: 50%;
+}
+#isdonebtn{
+    background-color: #33d9b2;
+    color: white;
+    border: #33d9b2;
+    border-radius: 50%;
+}
+#isdonebtn,#orderby,#Delete:hover{
+    cursor: pointer;
+}
+#orderby{
+    background-color: #34ace0;
+    color:white;
+    border: #34ace0;
+    padding: 1%;
+    margin: 0% 1% 1% 1%;
+}
+#point{
+    width: 12%;
+    height: 6vh;
+    background-color: #33d9b2;
+    color: white;
+    text-align: center;
+    border: #33d9b2;
+    font-size: 18px;
+}
+.complete,.not-complete{
+    width: -webkit-fill-available;
+}
+.not-complete tr {
+    background-color: #f7f1e3;
+    color: black;
+}
+.complete tr {
+    background-color: #84817a;
+    color: white;
+}
+h2{
+    color: white;
+    background-color: #34ace0;
+}
+/* responsive section */
+/* @media only screen and (max-width: 950px){
+    .todo-list{
+        flex-direction: column;
+        width: 200%;
+    }
+    
+} */

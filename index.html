@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!--===first todo list ====-->
+        <div class="todo-content">
+                <h2 style="text-align:center">TO DO List</h2>
+                <div class="todo-input">
+                    <div class="header-todo">
+                        <input type="text" Placeholder="Find todo by title or description" id="find-text">
+                        <button class="add-todo" id="find-button">Find</button>
+                    </div>
+                    <div class="header-todo">
+                        
+                            <input type="text" Placeholder="Enter Title Here.." id="title-text">
+                            <select name="point" id="point">
+                            <option value="0">Priority</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            </select><br>
+                            <br><textarea type="textarea" Placeholder="Enter Description Here.." id="description"></textarea>
+                            <br>
+                            <button class="add-todo" id="add-button">Add</button>
+                        
+                        
+                        
+                    </div>
+                </div>
+            <div class="error"></div>
+            <div class="todo-list">
+                <div class="task-class">
+                    <h2>Not Complete</h2>
+                    <button id="orderby">Oreder By Priority</button>
+                    <table class="not-complete" id="not-complete">
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Point</th>
+                            <th>Description</th>
+                            <th>CreateAT</th>
+                            <th>isDone</th>
+                            <th>Delete</th>
+                          </tr>
+                          <tr>
+                            <td>12323</td>
+                            <td>heloooooo</td>
+                            <td>1</td>
+                            <td>false</td>
+                            <td>12-12-1212</td>
+                            <td>12-12-3223</td>
+                          </tr>
+                    </table>
+                </div>
+                <div class="task-class">
+                    <h2>Complete</h2>
+                    <button id="orderby">Oreder By Priority</button>
+                    <table class="complete" id="complete">
+                          <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Point</th>
+                            <th>Description</th>
+                            <th>CreateAT</th>
+                            <th>isDone</th>
+                            <th>Delete</th>
+                          </tr>
+                          <tr>
+                            <td>123</td>
+                            <td>test 1</td>
+                            <td>4</td>
+                            <td>call test 1</td>
+                            <td>23-6-2022</td>
+                            <td><button class='delete-button' id='Delete'>X</button></td>
+                            <td><button class='delete-button' id='Delete'>X</button></td>
+                          </tr>
+                          
+                          <tr>
+                            <td>123</td>
+                            <td>test 1</td>
+                            <td>4</td>
+                            <td>call test 1</td>
+                            <td>23-6-2022</td>
+                            <td><button class='delete-button' id='Delete'>X</button></td>
+                            <td><button class='delete-button' id='Delete'>X</button></td>
+                          </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="./myscript.js"></script>
+    </body>
+</html>
